@@ -1,5 +1,4 @@
-# go-lab
-go lang lab
+# TCP scanner written in Go
 
 ## Run:
 ```bash
