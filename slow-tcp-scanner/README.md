@@ -1,12 +1,9 @@
 # slow-tcp-scanner written in Go
 single-threaded scanning
-## 1. Run the source code:
-```bash
-go run main.go
-Connection successful
-```
-## 2. Compile an executable binary file:
+## 1. Compile and Run:
 ```bash
 go build -ldflags "-w -s" main.go
-./main.exe
+./main.exe 
+22 open  
 ```
+It works too slow. 
