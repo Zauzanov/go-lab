@@ -17,3 +17,13 @@ func worker(ports, results chan int) {
 		results <- p
 	}
 }
+
+func main() {
+	ports := make(chan int, 100)
+	results := make(chan int)
+	var openports []int
+
+	for i := 0; i < cap(ports); i++ {
+		go worker(ports, results)
+	}
+}
